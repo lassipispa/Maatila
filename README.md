@@ -25,15 +25,15 @@ Harjoitustyö on ohjelmoitu Javalla.
 -public Lypsyrobotti() // luo uuden lypsyrobotin  
 -public Maitosailio getMaitosailio() // palauttaa kiinnitetyn maitosäiliö tai null-viitteen, jos säiliötä ei ole vielä   kiinnitetty  
 -public void setMaitosailio(Maitosailio maitosailio) // kiinnittää annetun säiliön lypsyrobottiin  
--public void lypsa(Lypsava lypsava) // lypsää lehmän robottiin kiinnitettyyn maitosäiliöön, metodi heittää poikkeuksen   IllegalStateException, jos säiliötä ei ole kiinnitetty
+-public void lypsa(Lypsava lypsava) // lypsää lehmän robottiin kiinnitettyyn maitosäiliöön, metodi heittää poikkeuksen   IllegalStateException, jos säiliötä ei ole kiinnitetty  
 
 **- Navetta:**
-    public Navetta(Maitosailio maitosailio)
-    public Maitosailio getMaitosailio() // palauttaa navetan maitosailion
-    public void asennaLypsyrobotti(Lypsyrobotti lypsyrobotti) // asentaa lypsyrobotin ja kiinnittää sen navetan maitosäiliöön
-    public void hoida(Lehma lehma) // lypsää parametrina annetun lehmän lypsyrobotin avulla, metodi heittää poikkeuksen IllegalStateException, jos lypsyrobottia ei ole asennettu
-    public void hoida(Collection<Lehma> lehmat) // lypsää parametrina annetut lehmät lypsyrobotin avulla, metodi heittää poikkeuksen IllegalStateException, jos lypsyrobottia ei ole asennettu
-    public String toString() // palauttaa navetan sisältämän maitosäiliön tilan
+-public Navetta(Maitosailio maitosailio)  
+-public Maitosailio getMaitosailio() // palauttaa navetan maitosailion  
+-public void asennaLypsyrobotti(Lypsyrobotti lypsyrobotti) // asentaa lypsyrobotin ja kiinnittää sen navetan maitosäiliöön  
+-public void hoida(Lehma lehma) // lypsää parametrina annetun lehmän lypsyrobotin avulla, metodi heittää poikkeuksen   IllegalStateException, jos lypsyrobottia ei ole asennettu  
+-public void hoida(Collection<Lehma> lehmat) // lypsää parametrina annetut lehmät lypsyrobotin avulla, metodi heittää   poikkeuksen IllegalStateException, jos lypsyrobottia ei ole asennettu  
+ -public String toString() // palauttaa navetan sisältämän maitosäiliön tilan  
 
 **- Maatila (Toteuttaa rajapinnan Eleleva):**
-	Maatilalla on omistaja ja siihen kuuluu navetta sekä joukko lehmiä
+-Maatilalla on omistaja ja siihen kuuluu navetta sekä joukko lehmiä
