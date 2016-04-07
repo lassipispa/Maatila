@@ -5,27 +5,27 @@ Harjoitustyö on ohjelmoitu Javalla.
 ## Maatila koostuu luokista:
 
 **- Maitosailio:**
-    public Maitosailio()
-    public Maitosailio(double tilavuus)
-    public double getTilavuus()
-    public double getSaldo()
-    public double paljonkoTilaaJaljella()
-    public void lisaaSailioon(double maara) // Lisää säiliöön vain niin paljon maitoa kuin sinne mahtuu, ylimääräiset jäävät 	lisäämättä, maitosäiliön ei siis tarvitse huolehtia tilanteesta jossa maitoa valuu yli
-    public double otaSailiosta(double maara) // Ottaa säiliöstä pyydetyn määrän, tai niin paljon kuin siellä on jäljellä
+-public Maitosailio()  
+-public Maitosailio(double tilavuus)  
+-public double getTilavuus()  
+-public double getSaldo()  
+-public double paljonkoTilaaJaljella()  
+-public void lisaaSailioon(double maara) // Lisää säiliöön vain niin paljon maitoa kuin sinne mahtuu, ylimääräiset jäävät   	lisäämättä, maitosäiliön ei siis tarvitse huolehtia tilanteesta jossa maitoa valuu yli  
+-public double otaSailiosta(double maara) // Ottaa säiliöstä pyydetyn määrän, tai niin paljon kuin siellä on jäljellä  
 
 **- Lehma (Toteuttaa rajapinnat Eleleva ja Lypsava):**
-    public Lehma() // luo uuden lehmän satunnaisesti valitulla nimellä
-    public Lehma(String nimi) // luo uuden lehmän annetulla nimellä
-    public String getNimi() // palauttaa lehmän nimen
-    public double getTilavuus() // palauttaa utareiden tilavuuden
-    public double getMaara() // palauttaa utareissa olevan maidon määrän
-    public String toString() // palauttaa lehmää kuvaavan merkkijonon (ks. esimerkki alla)
+-public Lehma() // luo uuden lehmän satunnaisesti valitulla nimellä  
+-public Lehma(String nimi) // luo uuden lehmän annetulla nimellä  
+-public String getNimi() // palauttaa lehmän nimen  
+-public double getTilavuus() // palauttaa utareiden tilavuuden  
+-public double getMaara() // palauttaa utareissa olevan maidon määrän  
+.public String toString() // palauttaa lehmää kuvaavan merkkijonon (ks. esimerkki alla)  
 
 **- Lypsyrobotti:**
-    public Lypsyrobotti() // luo uuden lypsyrobotin
-    public Maitosailio getMaitosailio() // palauttaa kiinnitetyn maitosäiliö tai null-viitteen, jos säiliötä ei ole vielä kiinnitetty
-    public void setMaitosailio(Maitosailio maitosailio) // kiinnittää annetun säiliön lypsyrobottiin
-    public void lypsa(Lypsava lypsava) // lypsää lehmän robottiin kiinnitettyyn maitosäiliöön, metodi heittää poikkeuksen IllegalStateException, jos säiliötä ei ole kiinnitetty
+-public Lypsyrobotti() // luo uuden lypsyrobotin  
+-public Maitosailio getMaitosailio() // palauttaa kiinnitetyn maitosäiliö tai null-viitteen, jos säiliötä ei ole vielä   kiinnitetty  
+-public void setMaitosailio(Maitosailio maitosailio) // kiinnittää annetun säiliön lypsyrobottiin  
+-public void lypsa(Lypsava lypsava) // lypsää lehmän robottiin kiinnitettyyn maitosäiliöön, metodi heittää poikkeuksen   IllegalStateException, jos säiliötä ei ole kiinnitetty
 
 **- Navetta:**
     public Navetta(Maitosailio maitosailio)
